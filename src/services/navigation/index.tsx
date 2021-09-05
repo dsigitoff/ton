@@ -10,8 +10,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { SCREENS } from "@shared-constants";
 // ? Screens
 import HomeScreen from "@screens/home/HomeScreen";
-import SearchScreen from "@screens/search/SearchScreen";
-import DetailScreen from "@screens/detail/DetailScreen";
+import FavoriteScreen from "@screens/favorite/FavoriteScreen";
 
 // ? If you want to use stack or tab or both
 const Tab = createBottomTabNavigator();
@@ -31,7 +30,7 @@ const Navigation = () => {
             if (route.name === SCREENS.HOME) {
               iconName = focused ? "home" : "home-outline";
             } else if (route.name === SCREENS.SEARCH) {
-              iconName = focused ? "ios-search" : "ios-search";
+              iconName = focused ? "ios-favorite" : "ios-favorite";
             }
             // You can return any component that you like here!
             return (
@@ -45,7 +44,7 @@ const Navigation = () => {
         }}
       >
         <Tab.Screen name={SCREENS.HOME} component={HomeScreen} />
-        <Tab.Screen name={SCREENS.SEARCH} component={SearchScreen} />
+        <Tab.Screen name={SCREENS.SEARCH} component={FavoriteScreen} />
       </Tab.Navigator>
     );
   };
@@ -63,9 +62,6 @@ const Navigation = () => {
         }}
       >
         <Stack.Screen name={SCREENS.HOME} component={renderTabNavigation} />
-        <Stack.Screen name={SCREENS.DETAIL}>
-          {(props) => <DetailScreen {...props} />}
-        </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );

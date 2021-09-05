@@ -3,10 +3,10 @@ import { View } from "react-native";
 /**
  * ? Local Imports
  */
-import styles from "./SearchScreen.style";
+import styles from "./FavoriteScreen.style";
 import Text from "@shared-components/text-wrapper/TextWrapper";
 
-export default class SearchScreen extends Component {
+export default class FavoriteScreen extends Component {
   render() {
     return (
       <View style={styles.container}>

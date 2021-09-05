@@ -66,8 +66,8 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
 │   │   │   ├───HomeScreen.style.ts
 │   │   │   └───HomeScreen.tsx
 │   │   └───search
-│   │       ├───SearchScreen.style.ts
-│   │       └───SearchScreen.tsx
+│   │       ├───FavoriteScreen.style.ts
+│   │       └───FavoriteScreen.tsx
 │   ├───services
 │   │   ├───api
 │   │   │   ├───api.constant.ts
