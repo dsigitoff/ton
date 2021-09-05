@@ -10,7 +10,7 @@ export default class FavoriteScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text h1> SearchScreen </Text>
+        <Text h1> FavoriteScreen </Text>
       </View>
     );
   }
